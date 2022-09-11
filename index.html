@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="Images/money.png" type="image/x-icon" />
     <title>Cash</title>
   </head>
   <body>
@@ -15,39 +16,70 @@
         minimum number of notes to return.
       </p>
 
-    <label class="label" for="bill-amount">Bill amount:</label>
-    <input type="number" id="bill-amount"/>
-    <!-- <button>Next</button> -->
+      <label class="label" for="bill-amount">Bill amount:</label>
+      <input type="number" id="bill-amount" />
+      <!-- <button>Next</button> -->
 
-    <label class="label" for="cash-given">Cash given:</label>
-    <input type="number" id="cash-given" />
-    <button id="check-button">Check</button>
-    <p id="error-message"></p>
+      <label class="label" for="cash-given">Cash given:</label>
+      <input type="number" id="cash-given" />
+      <button id="check-button">Check</button>
+      <p id="error-message"></p>
 
-    <table class="change-table">
-        <caption class="label">Return Change</caption>
+      <table class="change-table">
+        <caption class="label">
+          Return Change
+        </caption>
         <tr>
-            <th>No. of notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
+          <th>No. of notes</th>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
         </tr>
         <tr>
-            <th>Notes</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>100</td>
-            <td>50</td>
-            <td>10</td>
-            <td>5</td>
-            <td>1</td>
+          <th>Notes</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>50</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
         </tr>
-    </table>
+      </table>
     </div>
+
+    <footer class="footer">
+      <h2 class="footer-header">Contact me</h2>
+      <div class="container-centre" style="padding-bottom: 0.5rem">
+        If you wish to contact me, you can reach me by email at
+        <strong>prakhar.shrm202@gmail.com</strong>, or through my social media
+        handles.
+      </div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/prakhhaar" target="_blank"
+            ><img style="max-width: 55px" src="images/github-white.png"
+          /></a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/prakhhaar08" target="_blank"
+            ><img class="footer-icons" src="images/twitter-white.png"
+          /></a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/prakhar-sharma-a2741b1a8/"
+            target="_blank"
+            ><img class="footer-icons" src="Images/linkedin-white.png"
+          /></a>
+        </li>
+      </ul>
+    </footer>
 
     <script src="App.js"></script>
   </body>
