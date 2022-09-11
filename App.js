@@ -4,8 +4,10 @@ const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 
+// Array of availabe notes
 const availableNotes = [2000, 500, 100, 50, 10, 5, 1];
 
+// Check for validate bill and cash amount
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
   message.style.display = "none";
   if (billAmount.value > 0) {
@@ -20,6 +22,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
   }
 });
 
+// Logic for calculating number for notes
 function calculateChange(amountToBeReturned){
     for(var i=0; i < availableNotes.length; i++){
         const numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]);
